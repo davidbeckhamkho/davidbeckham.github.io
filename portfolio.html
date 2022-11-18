@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | David Beckham</title>
+<style>
+	@import url("TextMeOne_Regular/stylesheet.css");
+	@import url("AlteHaasGroteskRegular/stylesheet.css");
+
+		* {
+    		color: #FFFFFF;
+			scroll-behavior: smooth;
+		}
+	
+	.navbar {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: #23272A;
+		font-family: AlteHaasGroteskBOld;
+		height: 70px;
+		right: 0;
+		bottom: 0;
+	}
+	
+	.nav-button {
+		display: inline-flex;
+		margin: 10px;
+	}
+	
+	.nav-button div {
+	padding: 5px;
+    padding-left: 50px;
+    font-family: AlteHaasGroteskBold;
+	}
+	
+	.nav-button a {
+   	text-decoration: none;
+	color: #fff;
+	}
+	
+	.nav-button a:hover {
+   	text-decoration: none;
+	color: #fff;
+	}
+	
+	.isi {
+			padding-top: 70px;
+			background-image: linear-gradient(rgba(35, 39, 42, 1), rgba(51, 255, 173, 0.2));
+			background-color: #23272A;
+		}
+	
+	.button {
+		margin-left: 50px;
+		padding: 5px 5px 5px 5px;
+		background-color: #33FFAD;
+  		border: none;
+  		color: #000000;
+  		text-align: center;
+  		font-size: 16px;
+		border-radius: 5px;
+		display: block;
+		width: 20%;
+		transition: transform 0.5s;
+	}
+	
+	.button:hover {
+		background-color: #2de39a;
+		transform: scale(1.05);
+	}
+	
+	.portfolio-table {
+		padding-top: 70px;
+		background-image: linear-gradient(rgba(35, 39, 42, 1), rgba(51, 255, 173, 0.2));
+		background-color: #23272A;
+		padding-bottom: 50px;
+	}
+	
+	.portfolio-table p {
+		padding-top: 50px;
+		font-family: ;
+		text-align: center;
+		font-family: AlteHaasGroteskRegular;
+	}
+	
+	.portfolio-table h2 {
+		margin-top: -35px;
+		color: #33FFAD;
+		text-align: center;
+		font-size: 100px;
+		padding-bottom: 100px;
+		font-family: AlteHaasGroteskBOld;
+		text-decoration: underline;
+	}
+	
+	.content{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	.container h1 {
+		font-size: 40px;
+		padding-left: 50px;
+		margin-bottom: 30px;
+		text-align: left;
+	}
+	
+	.container p {
+		margin-top: -10px;
+		padding: 0px 0px 0px 50px;
+		text-align: left;
+		font-family: AlteHaasGroteskRegular;
+	}
+	
+	.content-text {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.logo {
+		padding-left: 40px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.logo img {
+		margin-right: 15px;
+	}
+	
+	iframe {
+		margin-top: 50px;
+	}
+	
+	.separator {
+		margin-top: 70px;
+		border: 1px solid #fff;
+		width: 1000px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+	
+	.footer {
+    padding: 20px;
+    background-color: #101010;
+    font-family: AlteHaasGroteskRegular;
+    text-align: center;
+	}
+		
+	</style>
+
+	<link href="AlteHaasGroteskBold/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('img/Portfolio Website.png')">
+	<div class="navbar fixed-top">
+	<h1 style="font-size: 30px; padding-left: 10px;">Beckham's Website</h1>
+	<div class="nav-button" style="text-align: center">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="profile.html">Profile</a></div>
+		<div><a href="#">Portfolio</a></div>
+		<div><a href="contactme.html">Contact Me</a></div>
+	</div>
+	</div>
+	
+	<div class="portfolio-table">
+	  <p>Here is supposed to be the place to put</p>
+		<h2>my portfolio.</h2>
+	  <div class="container">
+		  <div class="content">
+			  <a onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image','','img/Portfolio Website.png',1)"><img src="img/screenshotWebsite.png" alt="" width="400" height="580" id="Image"></a>
+		<div class="content-text">
+		<h1>Bootstrap Portfolio Website</h1>
+			    <p>Website pertama yang saya buat secara otodidak yang menjadi</p>
+				  <p style="padding-bottom: 20px;">cikal bakal semangat saya dalam belajar pemrograman website.</p>
+			  <p>Build by: </p>
+				  <div class="logo">
+		    <img src="img/html-5.png" width="64" height="64" alt=""/> 
+			<img src="img/css-3.png" width="64" height="64" alt=""/>
+			<img src="img/Bootstrap_logo.svg.png" width="64" height="50" alt=""/> 
+			  </div>
+			<p>| Website Development</p>
+			<p>| UI Design</p>
+				<a class="button" style="text-decoration: none; color: #000000;" href="https://davidbeckhamkho.github.io/" target="_blank">See Project</a>
+				<a class="button" style="text-decoration: none; color: #000000; margin-top: 15px;" href="https://github.com/davidbeckhamkho/davidbeckhamkho.github.io" target="_blank">See Code</a>
+			  </div>
+		  </div>
+		  
+		  <hr class="separator">
+		  
+			<div class="content">
+				<iframe width="400" height="225" src="https://www.youtube.com/embed/k-f77smon8g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="content-text">
+				<h1 style="padding-top: 50px;">Kotlin Tutorial Video</h1>
+					<div class="logo">
+					<img src="img/kotlin.png" width="64" height="64" alt="kotlin icon" style="margin-left: 10px; "/>
+					</div>
+				<a class="button" style="text-decoration: none; color: #000000;" href="https://davidbeckhamkho.github.io/" target="_blank">See Video</a>
+			  </div>
+		  	</div>
+		</div>
+	</div>
+	
+	
+	<footer>
+		<p class="footer">Created with ❤ by David Beckham | © 2022</p>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | David Beckham</title>
+<style>
+	@import url("TextMeOne_Regular/stylesheet.css");
+	@import url("AlteHaasGroteskRegular/stylesheet.css");
+	
+	* {
+		scroll-behavior: smooth;
+	}
+	
+	.navbar {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: #23272A;
+		font-family: AlteHaasGroteskBOld;
+		height: 70px;
+		right: 0;
+		bottom: 0;
+		color: #fff;
+	}
+	
+	.nav-button {
+		display: inline-flex;
+		margin: 10px;
+	}
+	
+	.nav-button div {
+	padding: 5px;
+    padding-left: 50px;
+    font-family: AlteHaasGroteskBold;
+	}
+	
+	.nav-button a {
+   	text-decoration: none;
+	color: #fff;
+	}
+	
+	.nav-button a:hover {
+   	text-decoration: none;
+	color: #fff;
+	}
+	
+	.isi {
+		padding-top: 110px;
+		background-image: linear-gradient(rgba(35, 39, 42, 1), rgba(51, 255, 173, 0.2));
+		background-color: #23272A;
+		color: #fff;
+		font-family: AlteHaasGroteskRegular;
+		}
+	
+	.isi p {
+		padding-top: 15px;
+		font-size: 15px;
+		margin-bottom: -5px;
+	}
+	
+	.isi h1 {
+		font-size: 70px;
+	}
+	
+	.contactme-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	
+	form {
+		padding: 60px 120px;
+		display: flex;
+		flex-direction: column;
+		width: 800px;
+	}
+	
+	label {
+		padding-top: 10px;
+		font-size: 17px;
+	}
+	
+	input {
+		width: 70%;
+		padding: 3px;
+		box-sizing: border-box;
+		border: 1.5px solid #000;
+	}
+	
+	textarea {
+		width: 100%;
+		padding: 3px;
+		box-sizing: border-box;
+		border: 1px solid #000;
+	}
+	
+	.button {
+		margin-top: 20px;
+		padding: 5px;
+		background-color: #33FFAD;
+  		border: none;
+  		color: #000000;
+  		text-align: center;
+  		font-size: 16px;
+		border-radius: 5px;
+		display: block;
+		width: 20%;
+		transition: transform 0.5s;
+	}
+	
+	.button:hover {
+		background-color: #2de39a;
+		transform: scale(1.05);
+	}
+	
+	.contact {
+		margin: 50px 20px 20px 100px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.social-media {
+		display: flex;
+	}
+	
+	.social-media-icons {
+		transition: transform 0.5s;
+		padding: 0 40px;
+	}
+	
+	.social-media-icons:hover {
+	 	transform: scale(1.1);
+	}
+	
+	.footer {
+		color: #fff;
+		padding: 20px;
+		background-color: #101010;
+		font-family: AlteHaasGroteskRegular;
+		text-align: center;
+	}
+	
+</style>
+	<link href="AlteHaasGroteskBold/stylesheet.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="navbar fixed-top">
+	<h1 style="font-size: 30px; padding-left: 10px;">Beckham's Website</h1>
+	<div class="nav-button" style="text-align: center">
+		<div><a href="index.html">Home</a></div>
+		<div><a href="profile.html">Profile</a></div>
+		<div><a href="portfolio.html">Portfolio</a></div>
+		<div><a href="#">Contact Me</a></div>
+	</div>
+</div>
+	
+<div class="isi">
+	<h1>Feel free to contact me!</h1>
+	<div class="contactme-container">
+  	<form>
+		<label for="nama">Nama :</label>
+		<input type="text" id="nama" name="nama">
+	  	<label for="email">Email :</label>
+		<input type="email" id="email" name="email">
+		<p><label for="pesan">Pesan :</label></p>
+		<textarea type="text" id="pesan" name="nama" rows="4" cols="50"></textarea>
+		<input class="button" type="submit" value="Submit">
+	</form>
+	
+	<div class="contact">
+		<p style="text-align: center; padding-bottom: 50px; font-size: 25px;">Or you can contact me via media social</p>
+		<div class="social-media">
+		  <div class="social-media-icons"><a href="https://wa.me/+6281220815737" target="_blank"><img src="img/whatsapp.png" width="64" height="64" alt="whatsapp icon"></a></div>
+			<div class="social-media-icons"><a href="https://www.instagram.com/beckham_497/" target="_blank"><img src="img/instagram.png" width="64" height="64" alt="instagram icon"></a></div>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer>
+	<p class="footer" style="font-family: AlteHaasGroteskRegular;">Created with ❤ by David Beckham | © 2022</p>
+</footer>
+
+</body>
+</html>
